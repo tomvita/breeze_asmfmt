@@ -16,7 +16,8 @@ linux_32bit:
 	GOOS=linux GOARCH=386 $(GOBUILD) -o $(UNIXBIN)
 	tar czf bin/nasmfmt_linux32.tar.gz $(UNIXBIN)
 
-windows_64bit:
+# windows_64bit:
+w:
 	GOOS=windows GOARCH=amd64 $(GOBUILD) -o $(WINBIN)
 	zip bin/nasmfmt_windows64.zip $(WINBIN)
 
